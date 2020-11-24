@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tired Bot</title>
+        <meta name="description" content="A simple bot only made when I was tired so there can be some things funny. It has utilities, bed time and social commands.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="image_files/tired-bot-round-logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+                font-weight: 700;
+                color: white;
+            }
+
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 50px;
+                font-weight: 900;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+            }
+
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                float: left;
+                color: white;
+                margin-top: 35px;
+                margin-left: 30px;
+            }
+
+            p, li {
+                font-family: 'Roboto', sans-serif;
+                font-size: 27px;
+                font-weight: 400;
+                color: white;
+            }
+
+            body {
+                background-image: url('image_files/tired-bot-background.png');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .nav-bar {
+                background-color: #131946;
+                clear: both;
+                overflow: auto;
+            }
+
+            nav {
+                float: right;
+            }
+
+            .profile-picture img {
+                padding: 4px;
+                margin: 4px;
+                float: left;
+            }
+
+            .bot-name {
+                padding: 4px;
+                margin-top: 12.5px;
+                float: left;
+                font-family: 'Roboto', sans-serif;
+                font-size: 35px;
+                font-weight: 700;
+                color: white;
+            }
+
+            ul li {
+                display: inline-block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                color: white;
+            }
+
+            .box-container {
+                width: 100%;
+                height: auto;
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                background-color: #36393f;
+            }
+
+            table {
+                width: 90%;
+                align-items: center;
+                margin: 20px;
+                float: left;
+            }
+
+            table, td {
+                font-family: 'Roboto', sans-serif;
+                font-size: 27px;
+                font-weight: 400;
+                text-align: left;
+                padding: 10px;
+                color: white;
+                border: 1px solid #72767d;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                background-color: #2f3136;
+            }
+
+            tr {
+                background-color: #72767d;
+            }
+
+            .footer {
+                background-color: #202225;
+                width: 100%;
+                height: 70px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                clear: both;
+                overflow: auto;
+            }
+
+            .bot-creator {
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+                float: left;
+                margin-top: 23px;
+                margin-left: 20px;
+            }
+
+            ul2 li2 {
+                display: inline-block;
+                padding: 10px;
+                margin-top: 13px;
+                margin-right: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+            }
+
+            footer {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="profile-picture">
+                <a href="index.html"><img src="image_files/tired-bot-logo.png" width="85" height="85"></a>
+            </div>
+            <div class="bot-name">
+                <a style="text-decoration: none;" href="index.html"><h1>Tired Bot</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=758385262257635398&scope=bot&permissions=37080128" target="_blank"><li>Invite</li></a>
+                    <a href="https://discord.gg/eFNqj3z" target="_blank"><li>Support</li></a>
+                    <a href="commands.html"><li>Commands</li></a>
+                </ul>
+            </nav>
+        </div>
+        <h2>Commands</h2>
+        <div class="box-container">
+            <table>
+            <!--Utilities Commands-->
+                <col>
+                <colgroup span="1"></colgroup>
+                <tr>
+                    <th style="background-color:#36393f; border: 1px solid#36393f; padding-left: 20px;" colspan="1" scope="colgroup">Utilities Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col"><strong>Command</strong></th>
+                    <th scope="col"><strong>Description</strong></th>
+                    <th scope="col"><strong>Usage</strong></th>
+                </tr>
+                <tr>
+                    <td>help</td>
+                    <td>Gives you a complete list of all commands.</td>
+                    <td>zzz.help</td>
+                </tr>
+                <tr>
+                    <td>ping</td>
+                    <td>Gives you the bot ping.</td>
+                    <td>zzz.ping</td>
+                </tr>
+                <tr>
+                    <td>invite</td>
+                    <td>Gives you the bot invite link.</td>
+                    <td>zzz.invite</td>
+                </tr>
+                <tr>
+                    <td>support</td>
+                    <td>Gives you the support invite link.</td>
+                    <td>zzz.support</td>
+                </tr>
+                <tr>
+                    <td>botinfo</td>
+                    <td>Gives you infos about the bot.</td>
+                    <td>zzz.botinfo</td>
+                </tr>
+                <tr>
+                    <td>website</td>
+                    <td>Gives you the bot website link.</td>
+                    <td>zzz.website</td>
+                </tr>
+                <tr>
+                    <td>avatar</td>
+                    <td>Gives you the avatar of a mentioned user or of the message author.</td>
+                    <td>zzz.avatar / zzz.avatar {@user}</td>
+                </tr>
+            <!--Fun Commands-->
+                <col>
+                <colgroup span="1"></colgroup>
+                <tr>
+                    <th style="background-color:#36393f; border: 1px solid#36393f; padding-left: 20px;" colspan="1" scope="colgroup">Fun Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col"><strong>Command</strong></th>
+                    <th scope="col"><strong>Description</strong></th>
+                    <th scope="col"><strong>Usage</strong></th>
+                </tr>
+                <tr>
+                    <td>tirednesslevel</td>
+                    <td>Gives your level of tiredness.</td>
+                    <td>zzz.tirednesslevel</td>
+                </tr>
+            <!--Bed Time Commands-->
+                <col>
+                <colgroup span="1"></colgroup>
+                <tr>
+                    <th style="background-color:#36393f; border: 1px solid#36393f; padding-left: 20px;" colspan="1" scope="colgroup">Bed Time Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col"><strong>Command</strong></th>
+                    <th scope="col"><strong>Description</strong></th>
+                    <th scope="col"><strong>Usage</strong></th>
+                </tr>
+                <tr>
+                    <td>snoring</td>
+                    <td>Gives you a random snoring video.</td>
+                    <td>zzz.snoring</td>
+                </tr>
+                <tr>
+                    <td>softbreathing</td>
+                    <td>Gives you a random soft breathing video.</td>
+                    <td>zzz.softbreathing</td>
+                </tr>
+                <tr>
+                    <td>heavybreathing</td>
+                    <td>Gives you a random heavy breathing video.</td>
+                    <td>zzz.heavybreathing</td>
+                </tr>
+                <tr>
+                    <td>asmr</td>
+                    <td>Gives you a random ASMR video.</td>
+                    <td>zzz.asmr</td>
+                </tr>
+            <!--Social Commands-->
+                <col>
+                <colgroup span="1"></colgroup>
+                <tr>
+                    <th style="background-color:#36393f; border: 1px solid#36393f; padding-left: 20px;" colspan="1" scope="colgroup">Social Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col"><strong>Command</strong></th>
+                    <th scope="col"><strong>Description</strong></th>
+                    <th scope="col"><strong>Usage</strong></th>
+                </tr>
+                <tr>
+                    <td>yawn</td>
+                    <td>Let you yawn.</td>
+                    <td>zzz.yawn</td>
+                </tr>
+                <tr>
+                    <td>sleepy</td>
+                    <td>Let you show that you are sleepy.</td>
+                    <td>zzz.sleepy</td>
+                </tr>
+                <tr>
+                    <td>hug</td>
+                    <td>Let you hug a mentioned user.</td>
+                    <td>zzz.hug {@user}</td>
+                </tr>
+                <tr>
+                    <td>cuddle</td>
+                    <td>Let you cuddle a mentioned user.</td>
+                    <td>zzz.cuddle {@user}</td>
+                </tr>
+                <tr>
+                    <td>kiss</td>
+                    <td>Let you kiss a mentioned user.</td>
+                    <td>zzz.kiss {@user}</td>
+                </tr>
+                <tr>
+                    <td>lick</td>
+                    <td>Let you lick a mentioned user.</td>
+                    <td>zzz.lick {@user}</td>
+                </tr>
+            <!--Image Commands-->
+                <col>
+                <colgroup span="1"></colgroup>
+                <tr>
+                    <th style="background-color:#36393f; border: 1px solid#36393f; padding-left: 20px;" colspan="1" scope="colgroup">Image Commands</th>
+                </tr>
+                <tr>
+                    <th scope="col"><strong>Command</strong></th>
+                    <th scope="col"><strong>Description</strong></th>
+                    <th scope="col"><strong>Usage</strong></th>
+                </tr>
+                <tr>
+                    <td>sleeping</td>
+                    <td>Gives you an image of your avatar sleeping or the avatar of a mentioned user.</td>
+                    <td>zzz.sleeping / zzz.sleeping {@user}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="bot-creator">
+                <span>Bot created by Anox3D.</span>
+            </div>
+            <footer>
+                <ul2>
+                    <a href="https://github.com/Anox3D" target="_blank"><li2>GitHub</li2></a>
+                    <a href="https://nodejs.org/" target="_blank"><li2>Node.js</li2></a>
+                    <a href="https://discord.js.org/" target="_blank"><li2>discord.js</li2></a>
+                </ul2>
+            </footer>
+        </div>
+    </body>
+</html>

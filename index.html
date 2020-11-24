@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tired Bot</title>
+        <meta name="description" content="A simple bot only made when I was tired so there can be some things funny. It has utilities, bed time and social commands.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="image_files/tired-bot-round-logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 25px;
+                font-weight: 700;
+                color: white;
+            }
+
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 50px;
+                font-weight: 900;
+                text-align: center;
+                color: white;
+                margin-top: 100px;
+            }
+
+            h3 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+            }
+
+            p, li {
+                font-family: 'Roboto', sans-serif;
+                font-size: 27px;
+                font-weight: 400;
+                color: white;
+            }
+
+            body {
+                background-image: url('image_files/tired-bot-background.png');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .nav-bar {
+                background-color: #131946;
+                clear: both;
+                overflow: auto;
+            }
+
+            nav {
+                float: right;
+            }
+
+            .profile-picture img {
+                padding: 4px;
+                margin: 4px;
+                float: left;
+                border-radius: 50%;
+            }
+
+            .bot-name {
+                padding: 4px;
+                margin-top: 12.5px;
+                float: left;
+                font-family: 'Roboto', sans-serif;
+                font-size: 35px;
+                font-weight: 700;
+                color: white;
+            }
+
+            ul li {
+                display: inline-block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                color: white;
+            }
+
+            .buttons-container {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .invite-button {
+                background-color: white;
+                border: none;
+                padding: 25px;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-align: center;
+                display: inline-block;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                color: #131946;
+                margin: 40px 20px;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                border-radius: 10px;
+                background-color: white;
+                color: black;
+                margin: auto;
+            }
+
+            .invite-button:hover {
+                background-color: #131946;
+                color: white;
+            }
+
+            .support-button {
+                background-color: white;
+                border: none;
+                padding: 25px;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-align: center;
+                display: inline-block;
+                font-family: 'Roboto', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+                color: #131946;
+                margin: 40px 20px;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                border-radius: 10px;
+                background-color: white;
+                color: black;
+                margin: auto;
+            }
+
+            .support-button:hover {
+                background-color: #131946;
+                color: white;
+            }
+
+            .box-container {
+                width: 100%;
+                height: 200px;
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                background-color: #36393f;
+            }
+
+            .description-container {
+                width: 75%;
+                height: 100px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer {
+                background-color: #202225;
+                width: 100%;
+                height: 70px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                clear: both;
+                overflow: auto;
+            }
+
+            .bot-creator {
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+                float: left;
+                margin-top: 23px;
+                margin-left: 20px;
+            }
+
+            ul2 li2 {
+                display: inline-block;
+                padding: 10px;
+                margin-top: 13px;
+                margin-right: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+            }
+
+            footer {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="profile-picture">
+                <a href="index.html"><img src="image_files/tired-bot-logo.png" width="85" height="85"></a>
+            </div>
+            <div class="bot-name">
+                <a style="text-decoration: none;" href="index.html"><h1>Tired Bot</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="https://discord.com/oauth2/authorize?client_id=758385262257635398&scope=bot&permissions=37080128" target="_blank"><li>Invite</li></a>
+                    <a href="https://discord.gg/eFNqj3z" target="_blank"><li>Support</li></a>
+                    <a href="commands.html"><li>Commands</li></a>
+                </ul>
+            </nav>
+        </div>
+        <h2>Tired Bot</h2>
+        <div class="buttons-container">
+            <div class="buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=758385262257635398&scope=bot&permissions=37080128" target="_blank"><button class="invite-button">Invite Bot</button></a>
+                <a href="https://discord.gg/eFNqj3z" target="_blank"><button class="support-button">Join Support Server</button></a>
+            </div>
+        </div>
+        </div>
+        <div class="box-container">
+            <div class="description-container">
+                <p>Tired Bot is a simple and fun bot made only when tired so some things can be wrong spelled. It has utilities, bed time, social and images commands. For a complete list of commands go to the <a href="commands.html" style="text-decoration: none;">Commands</a> page.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-creator">
+                <span>Bot created by Anox3D.</span>
+            </div>
+            <footer>
+                <ul2>
+                    <a href="https://github.com/Anox3D" target="_blank"><li2>GitHub</li2></a>
+                    <a href="https://nodejs.org/" target="_blank"><li2>Node.js</li2></a>
+                    <a href="https://discord.js.org/" target="_blank"><li2>discord.js</li2></a>
+                </ul2>
+            </footer>
+        </div>
+    </body>
+</html>
